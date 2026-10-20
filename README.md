@@ -8,6 +8,7 @@ Requires macOS 14 (Sonoma) or later, Apple silicon or Intel.
 
 ```sh
 brew tap scr2em/screenshotter https://github.com/scr2em/screenshotter
+brew trust --cask scr2em/screenshotter/screenshotter
 brew install --cask screenshotter
 ```
 

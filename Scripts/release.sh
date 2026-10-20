@@ -48,6 +48,7 @@ gh release create "$TAG" "$ZIP" \
 
 \`\`\`sh
 brew tap scr2em/screenshotter https://github.com/scr2em/screenshotter
+brew trust --cask scr2em/screenshotter/screenshotter
 brew install --cask screenshotter
 \`\`\`
 
