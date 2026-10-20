@@ -1,5 +1,6 @@
 import AppKit
 import Combine
+import ServiceManagement
 import SwiftUI
 
 @MainActor
@@ -54,6 +55,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 
         if !UserDefaults.standard.bool(forKey: "hasLaunchedBefore") {
             UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
+            // Start at login by default; the toggle in Settings turns it off.
+            do {
+                try SMAppService.mainApp.register()
+            } catch {
+                NSLog("Screenshotter: could not enable launch at login: %@", error.localizedDescription)
+            }
             showSettings()
             if !ScreenRecordingPermission.isGranted {
                 _ = CGRequestScreenCaptureAccess()

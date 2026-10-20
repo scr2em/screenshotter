@@ -21,6 +21,8 @@ System Settings → Privacy & Security, scroll down and click **Open Anyway**.
 Privacy & Security → Screen & System Audio Recording → turn on Screenshotter, then quit and reopen it.
 Release builds are ad-hoc signed, so macOS may ask again after an upgrade.
 
+**Launch at login** is turned on the first time the app runs. Turn it off in Settings.
+
 ## Build from source
 
 Requires Xcode (Swift 5.10+).
