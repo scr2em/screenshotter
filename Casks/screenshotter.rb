@@ -1,6 +1,6 @@
 cask "screenshotter" do
   version "0.1.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "c883cb802119cdfa659bca8c8843670438d16aa4f32909cf15f02c8ea8fc3170"
 
   url "https://github.com/scr2em/screenshotter/releases/download/v#{version}/Screenshotter-#{version}-universal.zip"
   name "Screenshotter"
